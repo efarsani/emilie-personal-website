@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #e695c9;
-  color: #2f2f2f;
+  color: white;
 }
 header {
   display: flex;
@@ -19,8 +19,9 @@ nav {
   gap: 24px;
 }
 nav a {
-  color: #2f2f2f;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
@@ -54,8 +55,7 @@ main img {
 .about-images img {
   width: 100%;
   max-width: none;
-  height: 350px;
-  object-fit: cover;
+  height: auto;
 }
 
 .projects {
@@ -85,6 +85,49 @@ main img {
   font-weight: bold;
 }
 
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact button {
+  padding: 12px 20px;
+  background-color: #8a2d6f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #6f2459;
+}
+
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
@@ -100,5 +143,14 @@ main img {
 
   .about-images {
     grid-template-columns: 1fr;
+  }
+
+  .contact-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 10px;
   }
 }
