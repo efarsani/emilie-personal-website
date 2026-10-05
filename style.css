@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e695c9;
+  color: #2f2f2f;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #e08dbf;
+}
+nav {
+  display: flex;
+  gap: 24px;
+}
+nav a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+main img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
